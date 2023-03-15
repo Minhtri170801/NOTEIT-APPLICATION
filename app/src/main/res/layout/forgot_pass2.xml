@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main"
+ >
+
+
+    <ImageButton
+        android:id="@+id/imgbtn_back"
+        android:background="@drawable/background_main"
+        android:layout_width="60dp"
+        android:layout_height="57dp"
+        android:src="@drawable/ic_back"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgbtn_back"
+        android:orientation="horizontal"
+        android:id="@+id/ln_header">
+        <TextView
+            android:id="@+id/tv_forgotpass"
+            android:layout_width="220dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Quên mật khẩu"
+            android:textColor="#001E4D"
+            android:textStyle="bold"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/img_lockclose"
+            android:layout_width="138dp"
+            android:layout_height="119dp"
+            android:src="@drawable/ic_lock_close" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ln_header"
+        android:text="Mã OTP sẽ hết hạn trong vòng: 60s"
+        android:textColor="#FF546F"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:padding="16dp"
+        android:id="@+id/tv_timer"/>
+
+    <EditText
+        android:id="@+id/et_code"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_timer"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="-1dp"
+        android:layout_marginRight="38dp"
+        android:background="@drawable/border_circle"
+        android:hint="Mã OTP"
+        android:inputType="number"
+        android:maxLength="6"
+        android:textAlignment="center"
+        android:textColor="#001E4D" />
+
+    <EditText
+        android:id="@+id/et_newpass"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_code"
+        android:layout_marginLeft="38dp"
+        android:layout_marginRight="38dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/border_circle"
+        android:hint="Mật khẩu mới"
+        android:inputType="textPassword"
+        android:textColor="#001E4D"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/et_confirm_newpass"
+        android:textAlignment="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_newpass"
+        android:layout_marginLeft="38dp"
+        android:layout_marginRight="38dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/border_circle"
+        android:hint="Xác nhận mật khẩu mới"
+        android:inputType="textPassword"
+        android:textColor="#001E4D"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="618dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="validationmessage"
+        android:id="@+id/tv_validation_message"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#FF546F"
+        android:textStyle="bold"
+        android:layout_below="@+id/et_confirm_newpass"/>
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_validation_message"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="80dp"
+        android:background="@drawable/border_circle"
+        android:text="Xác nhận"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="327dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:paddingTop="40dp"
+        android:layout_below="@+id/btn_confirm"
+        android:id="@+id/ln_resend">
+        <TextView
+            android:id="@+id/tv_nocode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tôi chưa nhận được mã?"
+            android:textColor="#001E4D" />
+
+        <TextView
+            android:id="@+id/tv_againCode"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="43dp"
+            android:text="Gửi lại"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textColor="#001E4D"
+     />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_search"
+        android:title="Search"
+        app:showAsAction="always"
+        app:actionViewClass="android.widget.SearchView"
+        android:iconTint="#001E4D"
+        />
+
+    <item
+        android:id="@+id/menu_type"
+        android:title="Grid"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_listview"
+        android:iconTint="#001E4D"/>
+    <item
+        android:id="@+id/menu_garbage"
+        android:title="Thùng rác"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/menu_labels"
+        android:title="Nhãn"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/menu_settings"
+        android:title="Cài đặt"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/menu_logout"
+        android:title="Đăng xuất"
+        app:showAsAction="never"/>
+
+</menu>

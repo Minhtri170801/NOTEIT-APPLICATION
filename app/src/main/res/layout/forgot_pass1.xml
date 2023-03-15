@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main"
+    >
+
+    <ImageButton
+        android:id="@+id/imgbtn_back"
+        android:background="@drawable/background_main"
+        android:layout_width="60dp"
+        android:layout_height="57dp"
+        android:src="@drawable/ic_back"
+    />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgbtn_back"
+        android:orientation="horizontal"
+        android:id="@+id/ln_header">
+        <TextView
+            android:id="@+id/tv_forgotpass"
+            android:layout_width="220dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Quên mật khẩu"
+            android:textColor="#001E4D"
+            android:textStyle="bold"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/img_lockclose"
+            android:layout_width="138dp"
+            android:layout_height="119dp"
+            android:src="@drawable/ic_lock_close" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_import_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ln_header"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Vui lòng nhập Email"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#001E4D"
+        android:textSize="18dp" />
+
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_import_email"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginRight="38dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/border_circle"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        android:textColor="#001E4D" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="validationmessage"
+        android:id="@+id/tv_validation_message"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#FF546F"
+        android:textStyle="bold"
+        android:layout_below="@+id/et_email"/>
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_validation_message"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="80dp"
+        android:background="@drawable/rounded_button"
+        android:text="Tiếp theo"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="327dp" />
+
+</RelativeLayout>

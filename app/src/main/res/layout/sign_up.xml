@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#FBFCFC"
+    android:background="@drawable/background_main"
+    tools:context=".activites.LoginActivity">
+
+
+
+    <TextView
+        android:id="@+id/tv_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:text="Đăng ký"
+        android:textStyle="bold"
+        android:textColor="#001E4D"
+        android:textSize="50dp" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_signup"
+        android:layout_marginLeft="38dp"
+        android:layout_marginRight="38dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/border_circle"
+        android:hint="Họ và tên"
+        android:textAlignment="center"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="15dp"
+        android:textColor="#001E4D"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_name"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="38dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/border_circle"
+        android:hint="Email"
+        android:textAlignment="center"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:paddingLeft="15dp"
+        android:textColor="#001E4D" />
+
+    <EditText
+        android:id="@+id/et_pass"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_email"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="38dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/border_circle"
+        android:hint="Mật khẩu"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:paddingLeft="15dp"
+        android:textColor="#001E4D"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="618dp" />
+
+    <EditText
+        android:id="@+id/et_confirm_pass"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_pass"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="38dp"
+        android:background="@drawable/border_circle"
+        android:hint="Mật khẩu xác nhận"
+        android:textAlignment="center"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:paddingLeft="15dp"
+        android:textColor="#001E4D"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="618dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="validationmessage"
+        android:id="@+id/tv_validation_message"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#FF546F"
+        android:textStyle="bold"
+        android:layout_below="@+id/et_confirm_pass"/>
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_validation_message"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="80dp"
+        android:background="@drawable/rounded_button"
+        android:textColor="#001E4D"
+        android:text="Đăng ký"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="327dp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_signup"
+        android:paddingTop="30dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="91dp"
+            android:fontFamily="segoe"
+            android:layout_marginBottom="50dp"
+            android:text="Nếu bạn đã có tài khoản?"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/tv_open_signin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_signup"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="73dp"
+            android:text="Đăng nhập"
+            android:layout_marginLeft="5dp"
+            android:textAllCaps="false"
+            android:textColor="#001E4D"
+            tools:layout_editor_absoluteX="0dp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteY="327dp" />
+    </LinearLayout>
+
+</RelativeLayout>
